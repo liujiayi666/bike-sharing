@@ -1,0 +1,34 @@
+@import './loading.less'; 
+.container{
+  display:flex;
+  .nav-left{
+    height:calc(100vh);
+  }
+  .main{
+    height:calc(100vh);
+    overflow:auto;
+  }
+  .content{
+    position:relative;
+    padding:20px;
+    background-color: #f1f3f5;
+  }
+}
+.content-wrap{
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  margin-top: -3px;
+  .ant-table-wrapper{
+      margin-left: -1px;
+      margin-right: -2px;
+  }
+}
+
+.clearfix{
+  &:after{
+    content:'';
+    clear:both;
+    display: block;
+    visibility: hidden;
+  }
+}
